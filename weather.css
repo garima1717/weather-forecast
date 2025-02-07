@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(57, 55, 55);
+  padding: 10px 10px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 40px;
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.header .nav button {
+  background-color: #ff7b00;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.header .nav button:hover {
+  background-color: #e56700;
+}
+
+/* Hero Section */
+.hero {
+  background: url('autumn-leaves-falling-stockcake.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+}
+
+.search-bar button {
+  background-color: #ff7b00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e56700;
+}
+
+/* Weather Info Section */
+.weather-container {
+  margin: 100px auto 50px;
+  max-width: 80%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  padding: 10px;
+  margin-right: 80px;
+  text-size-adjust: 200px;
+}
+
+#hourly-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  
+}
+
+.hourly-item {
+  text-align: center;
+}
+
+.hourly-item img {
+  width: 50px;
+}
+
+/* Footer */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+canvas {
+  max-width: 500px; /* Limit the canvas width */
+  max-height: 300px; /* Limit the canvas height */
+  margin-top: 40px;
+}
+
+
+
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.forecast-item h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.forecast-item p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.weather-map {
+  margin: 20px 0;
+  text-align: center;
+  width: 40%;
+  margin-left: 600px;
+  margin-top: -770px;
+}
+
+iframe {
+  border: none;
+  border-radius: 8px;
+}
+
+
+
+
+    #temperature {
+        font-size: 2rem; /* Increase font size */
+        font-weight: bold; /* Makes it bold */
+    }
+
+/* Main container for the daily forecast */
+#forecast {
+  display: flex;
+  flex-direction: column; /* Stack days vertically */
+  gap: 10px; /* Space between each line */
+  margin-top: 20px;
+  font-family: Arial, sans-serif; /* Clean font style */
+  font-size: 14px; /* Font size */
+  color: #333; /* Dark text color */
+  margin-left: 700px;
+}
+
+/* Each day's data in a single line */
+.forecast-card {
+  display: flex;
+  
+ 
+  padding: 10px; /* Add some padding around the line */
+
+}
+
+/* Styling for date */
+.forecast-card .date {
+  flex: .25; /* Allow date to take more space */
+  font-weight: bold; /* Bold date text */
+  text-align: left; /* Align date text to the left */
+}
+
+/* Weather icon */
+.forecast-card .weather-icon {
+  flex: 0; /* Prevent stretching */
+  width: 30px; /* Fixed width for the icon */
+  height: 30px;
+}
+
+/* Temperature styling */
+.forecast-card .temp {
+  flex: .1; /* Share space equally */
+  font-weight: bold; /* Highlight temperature */
+  color: black; /* Blue color */
+  text-align: center; /* Center align temperature */
+}
+
+/* Weather description styling */
+.forecast-card .description {
+  flex: .3; /* Allow more space for description */
+  text-align: right; /* Align description text to the right */
+  text-transform: capitalize; /* Capitalize description */
+  color: #666; /* Light gray color */
+}

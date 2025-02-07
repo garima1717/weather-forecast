@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>WeatherNow</h1>
+        </div>
+        <nav class="nav">
+          <a href="map.html">Map</a>
+            <a href="/2222222.html">About Us</a>
+            
+            <button onclick="toggleUnit()">Switch to <span id="unit-label">Fahrenheit (°F)</span></button>
+        </nav>
+    </header>
+    <div id="8-day-forecast" class="forecast-container"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Get the Latest Weather Updates</h2>
+        <p>Accurate and real-time weather forecasts</p>
+        <div class="search-bar">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+    </section>
+
+    <!-- Weather Info Section -->
+    <section class="weather-container">
+       <b> <div id="weather-info">
+            <h2 id="location">Chandigarh</h2>
+           <b> <p id="temperature">Temperature: 25°C</p></b>
+            <p id="feels-like">Feels Like: 27°C</p></b>
+            <p > ⬇ 2.0m/s NE       ⠀🧭1017hPa</p>
+            <p id="humidity">Humidity: 60%</p>
+            <p>Visibility: 10.0Km</p>
+
+        </div>
+        
+        <div id="hourly-forecast"></div>
+        <canvas id="hourly-forecast-graph"></canvas>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 WeatherNow | Designed for accurate weather updates</p>
+    </footer>
+
+    <script src="weather.js"></script>
+    <div class="weather-map">
+        
+        <iframe 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1357%2C51.4957%2C-0.1157%2C51.5157&layer=mapnik"
+            width="100%"
+            height="300"
+            style="border: none;"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div id="forecast" class="forecast"></div>
+</div>
+</body>
+</html>
